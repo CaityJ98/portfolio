@@ -1,0 +1,44 @@
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: aquamarine;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  gap: 10px 20px;
+  h1{
+    text-align: center;
+    align-self: center;
+  }
+  p {
+    align-self: center;
+    
+  }
+
+ 
+   .icons {
+    align-self: flex-end;
+    
+     ul{
+      margin-top: 100px;
+     position: relative;
+    
+   
+     
+    li{ 
+      
+    list-style: none;
+    font-size: 50px;
+    display: inline-block;
+    svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+     
+      padding: 50px;
+    font-size: 100px;
+  }
+}
+}
+ }
+ 
+}
