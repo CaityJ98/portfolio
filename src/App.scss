@@ -1,44 +1,132 @@
 
 .page {
+  margin-left: 10vw;
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
   background-color: aquamarine;
   height: 100vh;
-  width: 100%;
-  justify-content: center;
+  width: 90vw;
   gap: 10px 20px;
+  flex-flow: column;
+  margin-bottom: 10vh; 
+  justify-content: center;
+  img{
+    width: 85vw;
+    height: 95vh;
+    align-self: center;
+    flex-wrap: wrap;
+    position: fixed;
+  
+  }
+  
   h1{
+   
+    position: relative;
     text-align: center;
-    align-self: center;
-  }
-  p {
-    align-self: center;
+    font-family: 'cursive';
+    font-size: 13vh;
+    font-style: italic;
+    margin-bottom: 10vh; 
     
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
   }
+  .hometext{
+    animation: fadeIn 5s;
+    p{
+      position: relative;
+      text-align: center;
+      font-size: 4vh;
+      font-family: cursive;
+      font-weight: bold;
+      margin-bottom: 15vh;
+      
+    }
+  }
+    .homeblurb{
+      p{
+        font-size: 22px;
+        margin-left: 5vw;
+        margin-right: 30vw;
+        margin-bottom: 30vh;
+
+    }
+  
 
  
-   .icons {
-    align-self: flex-end;
-    
-     ul{
-      margin-top: 100px;
-     position: relative;
-    
-   
-     
-    li{ 
-      
-    list-style: none;
-    font-size: 50px;
-    display: inline-block;
-    svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
-     
-      padding: 50px;
-    font-size: 100px;
+ 
   }
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
- }
- 
+@keyframes change {
+  0% {color: black};
+  50% {color: aquamarine};
+  100%{color: black};
+}
+//For Mobile Devices
+ @media screen and(min-width: 360px) and (max-width: 800px) {
+  
+   .page {
+    height: 100vh;
+    width: 95vw;
+    margin-left: 8vw;
+    margin-bottom: 0;
+    justify-content: center;
+   
+  
+    h1{ 
+      font-size: 20vw;
+      margin: 0;
+    }
+  
+     
+      .hometext{
+        p{
+          margin: 0;
+        }
+        .homeblurb{
+       p{ 
+         padding: 0px;
+         font-weight: normal;
+         margin-top: 10px;
+        //  margin-left: 8px;
+        //  margin-bottom: 5px;
+        background-color: aquamarine;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+       }
+      }
+      }
+    
+    }
+} 
+
+@media screen and(min-width: 810px) and (max-width: 1024px) {
+
+  .page{
+    margin-bottom: 0;
+    height: 100vh;
+   h1{
+     
+     margin-bottom: 0;
+   }
+   .hometext{
+     p{
+       margin-bottom: 5vh;
+     }
+     .homeblurb{
+       p{
+         margin-bottom: 25vh;
+        margin-left: 0;
+       }
+     }
+   }
+  }
 }
