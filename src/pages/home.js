@@ -1,7 +1,6 @@
 
 // import App from '../App.js';
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Picture from '../assets/images/background.jpg'
 
 

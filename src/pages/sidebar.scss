@@ -80,6 +80,11 @@
                 content: 'ABOUT';
             }
         }
+        a.portfolio-link {
+            &:after {
+                content: 'PORTFOLIO'
+            }
+        }
             a.contact-link {
                 &:after {
                     content: 'CONTACT';
@@ -106,8 +111,8 @@
             a{
                 padding: 7px 0;
                 display: block;
-                font-size: 30px;
-                line-height: 16px;
+                font-size: 40px;
+                line-height: 50px;
                 &:hover svg {
                     color: #ffd700;
                 }

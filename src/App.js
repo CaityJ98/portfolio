@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route} from 'react-router-dom'
 import Home from './pages/home'
 import About from './pages/about'
 import Contact from './pages/contact'
+import Portfolio from './pages/portfolio'
 // import NavBar from "./pages/navigation"
 import SideBar from "./pages/sidebar"
 function App() {
@@ -29,6 +30,9 @@ function App() {
   </Route>
   <Route path="/contact">
     <Contact />
+  </Route>
+  <Route path="/portfolio">
+    <Portfolio />
   </Route>
   
  

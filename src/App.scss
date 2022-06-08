@@ -63,13 +63,78 @@
 
 @keyframes fadeIn {
   0% { opacity: 0; }
+  50% { opacity: 0.5;}
   100% { opacity: 1; }
 }
+@keyframes fadeInPic{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+
+}
+
 @keyframes change {
   0% {color: black};
   50% {color: aquamarine};
   100%{color: black};
 }
+.about-page {
+  margin-left: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+  height: 100vh;
+  width: 90vw;
+  gap: 10px 20px;
+  flex-flow: column;
+  margin-bottom: 10vh; 
+  img {
+    display: flex;
+    height: 100vh;
+    width: 90vw;
+    position: fixed; 
+  }
+  .wrapper{
+    
+    h1{ 
+      position: relative;
+      animation: fadeIn 5s;
+    display: flex;
+    margin-top: 7vh;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 10vh;
+    color: white;
+  }
+    
+    
+
+  
+  img{
+  
+    
+    align-self: flex-start;
+    width: 300px;
+    height: 350px;
+    margin-left: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    animation: fadeInPic 8s;
+    border-radius: 10%;
+    border-style: groove;
+    border-color: white;
+    border-width: 5px; 
+    
+  }
+}
+
+}
+
+
+
+
+
 //For Mobile Devices
  @media screen and(min-width: 360px) and (max-width: 800px) {
   
