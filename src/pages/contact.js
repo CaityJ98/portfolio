@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
      <div id="contact-form">
      <p> Please contact me if you have any questions or just want to get in touch. You can do so by using the form below  <br />
-     or reaching on 0413 906 408. <br />
+     or giving me a call on 0413 906 408. <br />
             I look forward to hearing from you!</p>
             <br />
         <Form>
