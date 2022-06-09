@@ -108,8 +108,6 @@
   }
 }
    .contents{ 
-    //  height: 80vh;
-    //  top: 30vh;
     position: relative;
 
   img{
@@ -117,17 +115,10 @@
     position: relative;
     width: 300px;
     float:left;
-    // height: 350px;
-    // margin-left: 10vw;
     display: flex;
     flex-wrap: wrap;
     animation: fadeInPic 3s;
-    // border-radius: 10%;
-    // border-style: groove;
     border: 5px solid white;
-    // border-width: 5px; 
-    
-   
     top: 20vh; 
     left: 15vw; 
     right: 0vw;
@@ -140,13 +131,8 @@
     top: 13vh;
     display: flex;
     width: 40vw; 
-   
     background: rgba(74, 118, 131, 0.965);
     border: 5px solid white;
-    // border-radius: 10%;
-    // border-style: groove;
-    // border-color: white;
-    // border-width: 5px;
     align-items: flex-end;
   }
   .spiel{
@@ -154,11 +140,7 @@
   p{
     
     animation: fadeIn 5s;
-  
-    
-  
     color: white;
-    
     font-weight: bold;
     font-size: 2.5vh;
     font-family: 'Gentium Plus', serif;
@@ -212,10 +194,9 @@ margin-top: 5vh;
 
   
   p{
-    animation: fadeIn 5s;
+    animation: fadeIn 3s;
     color: whitesmoke;
     font-weight: bold;
-    // position: relative;
     font-size: 2vh;
     font-family: 'Gentium Plus', serif;
     text-align: center;
@@ -244,8 +225,40 @@ Form{
 }
 }
 .port{
-  width: 100%;
-}
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10vw;
+  width: 90%;
+  height: 100vh;
+  justify-content: center;
+  justify-items: center;
+  .heading{
+    h1{
+      border-bottom: 5px solid white;
+      animation: fadeIn 3s;
+    display: flex;
+    
+    justify-content: center;
+    font-family: cursive;
+    font-size: 10vh;
+    color: white;
+    }
+  }
+  .cards{
+    display: flex;
+    justify-content: center;
+    .card{
+      border: 5px solid white;
+      margin: 4vw;
+    .card-img-top{
+      border-bottom: 3px solid black;
+      height: 20vh;
+    }
+  }
+  }
+  }
+
 
 
 //For Mobile Devices
@@ -274,8 +287,6 @@ Form{
          padding: 0px;
          font-weight: normal;
          margin-top: 10px;
-        //  margin-left: 8px;
-        //  margin-bottom: 5px;
         background-color: aquamarine;
         color: black;
         font-family: 'Times New Roman', Times, serif;
@@ -296,11 +307,9 @@ Form{
       }
       .contents{
         justify-content: center;
-    //    width: 90%;
-    //     top: 5%;
-    
+  
     top: 20%;
-    // display: block;
+    
     position:absolute;
  
 
@@ -311,13 +320,8 @@ Form{
       .blurb{
         top: 0;
         bottom: 0;
-       
         width: 100%;
         left: 0;
-        
-        // height: 100%;
-        
-        // right: 
         align-self: center;
        justify-content: center;
        
@@ -355,21 +359,21 @@ Form{
       }
     }
   }
-} 
-.port{
-  font-size: 25vh;
-  text-align: center;
-  margin-left: 20vw;
-  a{
-    padding: 7px 0;
-    display: block;
-    font-size: 40px;
-    line-height: 50px;
-    &:hover svg {
-        color: #ffd700;
+  .port{
+    overflow-y: auto;
+    .cards{
+      margin-left: 4vw;
+      flex-direction: column;
+      .card{
+      margin-bottom: 5vh;
+      width: 10%;
+      
+      
+      }
     }
-}
-}
+  }
+} 
+
 
 @media screen and(min-width: 810px) and (max-width: 1024px) {
 
@@ -402,11 +406,10 @@ Form{
     }
     .contents{
       justify-content: center;
-  //    width: 90%;
-  //     top: 5%;
+ 
   
   top: 20%;
-  // display: block;
+
   position:absolute;
 
 
@@ -420,23 +423,11 @@ Form{
       left: 30%;
     }
     .blurb{
-      // margin-top: 0vh;
-      // bottom: 10vh;
-     
-      width: 100%;
+     width: 100%;
       left: 0;
       
-      // height: 100%;
-      
-      // right: 
-    //   align-self: center;
-    //  justify-content: center;
      
-      
-      
-      
       p{
-       
       font-size: 15px;}
     }
   }
@@ -465,5 +456,20 @@ Form{
     text-align:center;
   }
 }
+}
+.port{
+  overflow-y: auto;
+  .cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20vw;
+    .card{
+      width: 50vw;
+      
+    }
+  
+    
+  }
 }
 }
