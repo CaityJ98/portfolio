@@ -1,17 +1,19 @@
-
+import React from 'react'
 import '../App.scss'
 import Myself from '../assets/images/selfimg.jpg';
 import Wallpaper from '../assets/images/aboutme.jpg'
-import Accordion from 'react-bootstrap/Accordion'
+
+
 function About () {
+   
     return (
-         
+        
         <div className="about-page">
            
                <img src={Wallpaper} alt="About Me wallpaper"/>
                 
            
-            <div className="wrapper">
+            <div className="about-me">
             
                 <h1>About Me</h1>
                 <img src={Myself} alt="Picture of me"/> 
@@ -42,6 +44,7 @@ function About () {
            
 
         </div>
+      
     )
 }
 

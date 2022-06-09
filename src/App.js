@@ -28,12 +28,13 @@ function App() {
   <Route path='/about'>
     <About />
   </Route>
-  <Route path="/contact">
-    <Contact />
-  </Route>
   <Route path="/portfolio">
     <Portfolio />
   </Route>
+  <Route path="/contact">
+    <Contact />
+  </Route>
+  
   
  
   

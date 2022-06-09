@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 // import cslogo from '../../assets/images/cslogo.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faBookOpen, faBookReader, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBookOpen,  faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Logo from '../assets/images/cslogo.png';
 const Sidebar = () => (
