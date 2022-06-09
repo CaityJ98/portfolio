@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com'
 import { Form, Button } from 'react-bootstrap'
 // import Wallpaper from '../assets/images/aboutme.jpg'
 import '../App.scss'
-import Background from '../assets/images/aboutme.jpg';
+
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -36,10 +36,7 @@ const Contact = () => {
         }
         
     }
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
+  
    
     return (
        
